@@ -18,5 +18,5 @@ This deep image classifier uses a number of ML modules to work properly:
 requires python
 
 - python -m venv my_env
-- source venv/bin/activate
+- myenv\Scriptsa\activate
 - pip install -r requirements.txt
