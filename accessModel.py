@@ -11,6 +11,6 @@ image_classifier_model = load_model(os.path.join('models', 'imageclassifier.h5')
 predicted = image_classifier_model.predict(np.expand_dims(resize/255, 0))
 
 if predicted < 0.5: 
-    print(f'Predicted class is Sad')
+    print(f'The predicted class is Sad with {predicted*100}% chances')
 else:
-    print(f'Predicted class is Happy')
+    print(f'The predicted class is Happy with {predicted*100}% chances')
